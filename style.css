@@ -63,7 +63,7 @@ body {
 .playarea {
   display: block;
   width: 250px;
-  height: 300px;
+  height: 400px;
   margin: auto;
   border: 1px solid #000;
   text-align: center
@@ -80,7 +80,7 @@ body {
 #controls {
 	display: block;
   width: 200px;
-	margin: 5px 25px;
+	margin: 50px 25px;
 }
 
 #keyboard {
@@ -89,7 +89,7 @@ body {
 
 .kl {
   display: inline-block;
-  font-size: 12px;
+  font-size: 15px;
   margin: 2px;
   padding: 2px;
   border: 1px solid #999;
