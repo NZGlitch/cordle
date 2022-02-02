@@ -4,6 +4,28 @@ body {
 
 }
 
+.animate {
+   animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 .wordle-line {
 	width: 80%;
 	height: 35px;
@@ -44,6 +66,7 @@ body {
   height: 300px;
   margin: auto;
   border: 1px solid #000;
+  text-align: center
 }
 
 #game {
@@ -67,10 +90,16 @@ body {
 .kl {
   display: inline-block;
   font-size: 12px;
-  margin: 0;
+  margin: 2px;
   padding: 2px;
-  border: 1px dashed #999;
+  border: 1px solid #999;
   cursor: pointer;
+}
+
+.keyrow {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
 }
 
 .title {

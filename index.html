@@ -1,9 +1,10 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
+		<script src="keyboard.js"></script>
 		<script src="dict.js"></script>
 		<script src="common_dict.js"></script>
-		<script src="wordle.js"></script>
+		<script src="curdle.js"></script>
 	</head>
 	<body>
 		<div class="title">
@@ -12,6 +13,9 @@
 		<div class="playarea">
 			<div id="game"></div>
 			<div id="keyboard"></div>
+			<div id="keyboard-r1" class="keyrow"></div>
+			<div id="keyboard-r2" class="keyrow"></div>
+			<div id="keyboard-r3" class="keyrow"></div>
 			<div id="controls">
 				<div class="newgame btn" onclick="initGame()" tabindex="-1">New Game</div>
 			</div>
