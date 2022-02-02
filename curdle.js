@@ -7,19 +7,6 @@ var quiz_dict = [];
 //The length of words to use
 var wordLength = 5;
 
-// Letters typed so far
-//var guess = [];
-
-// Index of current guess word
-//var curGuess = -1;
-
-// Index of current letter
-//var curLetter = 0;
-
-// The current word to guess
-//var currentWord = [];
-
-
 //The current Game State
 var gameState = {
 	quizWord: "",		//The word to guess
@@ -73,8 +60,6 @@ function initNextGuess() {
 	gameState.guesses.push([]);
 }
 
-
-
 function guessWord() {
 	var guessNum = gameState.guesses.length-1;
 	var guess = gameState.guesses[guessNum].slice(0); //make a copy
@@ -92,7 +77,6 @@ function guessWord() {
 	}	
 
 	var solved = true;
-
 
 	//check correct letters first
 	for (var i = 0; i<wordLength; i++) {

@@ -10,7 +10,7 @@ var Keyboard = {
   	var row1 = this.createKeyRow(["Q","W","E","R","T","Y","U","I","O","P"]);
   	row1.push(["DEL", 8])
   	var row2 = this.createKeyRow(["A","S","D","F","G","H","J","K","L"]);
-  	row2.push(["ENTER",13]);
+  	row2.push(["GUESS",13]);
   	var row3 = this.createKeyRow(["Z","X","C","V","B","N","M"]);
 
   	var rows = [row1,row2,row3]
