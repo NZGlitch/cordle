@@ -6,16 +6,16 @@ body {
 
 .wordle-line {
 	width: 80%;
-	height: 70px;
+	height: 35px;
 	margin: auto;
-	font-size: 50px;
+	font-size: 25px;
 	display: block;
 }
 
 .wletter {
-	width: 50px;
-	height: 60px;
-  margin: 0px 5px;
+	width: 25px;
+	height: 30px;
+  margin: 0px 2.5px;
 	display: inline-block;	
 	border: 1px solid #000;
 	vertical-align: middle;
@@ -40,46 +40,47 @@ body {
 
 .playarea {
   display: block;
-  width: 500px;
-  height: 600px;
+  width: 250px;
+  height: 300px;
   margin: auto;
   border: 1px solid #000;
 }
 
 #game {
-  width: 400px;
-  height: 420px;
-  margin: 10px 49px;
+  width: 200px;
+  height: 210px;
+  margin: 5px 24px;
   /** border: 1px solid #ccc; */
 
 }
 
 #controls {
 	display: block;
-  width: 400px;
-	margin: 10px 50px;
+  width: 200px;
+	margin: 5px 25px;
 }
 
 #keyboard {
-  margin: 10px;
+  margin: 5px;
 }
 
 .kl {
   display: inline-block;
-  font-size: 25px;
+  font-size: 12px;
   margin: 0;
-  padding: 5px;
+  padding: 2px;
   border: 1px dashed #999;
+  cursor: pointer;
 }
 
 .title {
   display: block;
-  font-size: 60px;
+  font-size: 30px;
   text-align: center;
 }
 
 .newgame {
-	width: 150px;
+	width: 75px;
   float: left;
   text-align: center;
 }
@@ -91,13 +92,13 @@ body {
   background-image: -ms-linear-gradient(top, #3498db, #2980b9);
   background-image: -o-linear-gradient(top, #3498db, #2980b9);
   background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  font-size: 10px;
+  padding: 5px 10px 5px 10px;
   text-decoration: none;
 }
 

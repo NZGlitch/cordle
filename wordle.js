@@ -83,10 +83,8 @@ function keyDown(event) {
 //  curPress = event.key;
  }
 
-function keyUp(event) {
-  game.focus();
-  var code = event.which;
-  if (code >= 97 && code <= 122)
+function pressKey(code) {
+	if (code >= 97 && code <= 122)
   	code = code - 32;
   if (code < 65 || code > 91) {
   	if (code == 8 && curLetter > 0) {
@@ -111,7 +109,14 @@ function keyUp(event) {
   	letDiv.innerHTML = guess[curLetter];
   	curLetter++;
   }
+
 }
+function keyUp(event) {
+  game.focus();
+  var code = event.which;
+  pressKey(code);
+}
+ 
 
 function initNextGuess() {
 	curGuess++;
@@ -132,8 +137,10 @@ function initKeyboard() {
 	kb.innerHTML = "";
 	for (var i = 65; i<91; i++) {
 		var l = String.fromCharCode(i);
-		kb.innerHTML = kb.innerHTML + "<div class='kl' id=kb-"+l+">"+l+"</div>"
+		kb.innerHTML = kb.innerHTML + "<div class='kl' onclick='pressKey("+i+")' id=kb-"+l+">"+l+"</div>"
 	}
+	kb.innerHTML = kb.innerHTML + "<div class='kl' onclick='pressKey("+8+")'>&lt;</div>"
+	kb.innerHTML = kb.innerHTML + "<div class='kl' onclick='pressKey("+13+")'>&check;</div>"
 }
 
 function initGame() {
